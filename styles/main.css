@@ -16,6 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5em;
 }
 header {
     display: flex;
@@ -25,4 +26,62 @@ header {
 header img {
     width: 200px;
     padding: 1.5em;
+}
+main li {
+    list-style-type: none;
+}
+.intro p::first-line {
+    font-size: 110%;
+    font-weight: 500;
+}
+.formgroup {
+    display: flex;
+    align-items: baseline;
+}
+.formgroup label {
+    width: 30%;
+    text-align: right;
+    padding-right: 5px;
+}
+input[type="text"], input[type="date"],input[type="email"], input[type="tel"], select{
+   font-size: 90%;
+   width:40%;
+}
+.radiogroup {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.radiogroup label {
+    width: 50%;
+    padding-left: 5px;
+    padding-top: 8px;
+    align-items: right;
+}
+.radiotype label {
+    display: flex;
+    text-align: left;
+    padding-left: 5px
+    padding-top: 8px
+}
+input[type="submit"], input[type="reset"] {
+    background-color: lavender;
+    color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid red;
+}   
+.buttons {
+    display: flex;
+    justify-content: center;
+    height: 150px; 
+    padding: 50px 100px;
+    align-items: center;
+    gap: 15px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
