@@ -434,7 +434,7 @@
             </form>
         </div>
         <button class="buttons" type="submit">Submit</button>
-        <button class="buttons" type="reset">Reset</button>
+        <button onclick="scrollToTopFunction()" id="myBtn" title="Go to top" class="buttons" type="reset">Reset</button>
     </main>
     <footer>
         <p>&copy; <span id="copyright"></span> Charles Recck Productions</p>
@@ -442,3 +442,12 @@
 </body>
 
 </html>
+<script> 
+    function scrollToTopFunction() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  });
+}
+</script>

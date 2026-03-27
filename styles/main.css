@@ -50,19 +50,20 @@ input[type="text"], input[type="date"],input[type="email"], input[type="tel"], s
 .radiogroup {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
+    margin-left: 30%;
 }
 .radiogroup label {
+    text-align: left;
+    margin-left: 5px
+}
+.radiotype {
+    line-height: 1;
+}
+.radiotype label {
+    text-align: left;
     width: 50%;
     padding-left: 5px;
     padding-top: 8px;
-    align-items: right;
-}
-.radiotype label {
-    display: flex;
-    text-align: left;
-    padding-left: 5px
-    padding-top: 8px
 }
 input[type="submit"], input[type="reset"] {
     background-color: lavender;
@@ -73,15 +74,53 @@ input[type="submit"], input[type="reset"] {
 }   
 .buttons {
     display: flex;
-    justify-content: center;
-    height: 150px; 
-    padding: 50px 100px;
+    justify-content: baseline;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+    margin: 20px 0;
 }
 footer {
     text-align: center;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+}
+
+/********************************************media Queries**************************************************/
+@media (max-width: 767px) {
+   body {
+    width: 100%;
+   }
+   header {
+    flex-direction: column;
+   }
+   header h2 {
+    text-align: center;
+    font-size: 125%;
+   }
+   .intro {
+    width: 95%;
+    margin: 0 auto;
+   }
+   form {
+    width: 80%;
+    margin: 0 auto;
+   }
+    .formgroup {
+     flex-direction: column;
+    }
+    .formgroup label {
+     width: 95%;
+     text-align: left;
+    }
+    .radiotype {
+        flex-direction: row;
+    }
+    input[type="text"], input[type="date"],input[type="email"], input[type="tel"], select{
+        width: 95%;
+    }
+    input[type=checkbox] {
+       margin-left: 5%;
+    }
+    
 }
